@@ -1,0 +1,15 @@
+#0 setup 
+create a new Postgres database DONE
+
+rename .env example DONE
+add `DB_CONNECTION_STRING` from render DONE
+add port DONE
+
+npm install DONE
+npm run dev DONE
+
+check contection to database
+
+understand GET books function
+
+#1 create GET authors function

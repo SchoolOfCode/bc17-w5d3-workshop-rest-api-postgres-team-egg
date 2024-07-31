@@ -10,7 +10,11 @@ export async function getBooks() {
   // Use the pool object to send the query to the database
   const result = await pool.query(queryText);
 
-  // The rows property of the result object contains the retrieved records
+
+console.log('egg')
+
+
+// The rows property of the result object contains the retrieved records
   return result.rows;
 }
 

@@ -37,6 +37,7 @@ app.get("/authors/", async function (req, res) {
   res.status(200).json({ status: "success", data: authors });
 });
 
+
 // Endpoint to retrieve a specific author by id
 app.get("/authors/:id", async function (req, res) {
   const id = req.params.id;
