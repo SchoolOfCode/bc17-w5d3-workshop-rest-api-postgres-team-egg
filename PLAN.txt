@@ -8,8 +8,10 @@ add port DONE
 npm install DONE
 npm run dev DONE
 
-check contection to database
+check contection to database DONE
 
-understand GET books function
+understand GET books function DONE
 
-#1 create GET authors function
+#1 create GET authors function DONE 
+
+#2 create GET authors by id function DONE 

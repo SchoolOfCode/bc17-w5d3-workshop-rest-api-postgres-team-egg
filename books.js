@@ -11,9 +11,6 @@ export async function getBooks() {
   const result = await pool.query(queryText);
 
 
-console.log('egg')
-
-
 // The rows property of the result object contains the retrieved records
   return result.rows;
 }
