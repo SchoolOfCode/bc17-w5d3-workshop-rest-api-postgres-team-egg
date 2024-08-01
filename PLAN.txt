@@ -15,3 +15,5 @@ understand GET books function DONE
 #1 create GET authors function DONE 
 
 #2 create GET authors by id function DONE 
+
+#3 create POST authors

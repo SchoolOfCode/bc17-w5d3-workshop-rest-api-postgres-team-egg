@@ -14,17 +14,38 @@ export async function getAuthors() {
 return eggResult.rows; 
 }
 
-// export async function getAuthorById(id) {
-//   // Query the database and return the author with a matching id or null
+export async function getAuthorById(id) {
+  // Query the database and return the author with a matching id or null
 
-//   const eggyResult = "SELECT * FROM authors WHERE id = $1";
+  const eggQueryText = "SELECT * FROM authors WHERE id = $1";
 
-//   const friedResult = await pool.
+  const friedResult = await pool.query(eggQueryText, [id])
 
-// }
+  return friedResult.rows[0] || null
+
+}
 
 export async function createAuthor(author) {
   // Query the database to create an author and return the newly created author
+
+  //split data from body into two vars to they can be insterted into two seperate columns
+  //read json from body
+  //convert ti js
+  //split into two objects ??? array
+
+//   {
+//     "first_name": "Eggbert",
+//     "last_name": "Sandwich"
+// }
+
+  
+  //assign these to two variables
+  eggLastname = 
+  eggFirstname = 
+
+  const eggQueryText = "INSERT INTO authors (first_name, last_name) VALUES ($1, $2)"
+
+  const friedResult = await pool.query(eggQueryText, [eggFirstname] [eggLastname])
 }
 
 export async function updateAuthorById(id, updates) {
