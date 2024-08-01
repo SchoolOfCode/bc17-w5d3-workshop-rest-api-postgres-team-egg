@@ -29,9 +29,10 @@ export async function createAuthor(author) {
   // Query the database to create an author and return the newly created author
 
   //split data from body into two vars to they can be insterted into two seperate columns
-  //read json from body
-  //convert ti js
-  //split into two objects ??? array
+  //read json from body 
+  //create variable to store json fron post request body 
+  // insert read file code here ** 
+  // use array from new data
 
 //   {
 //     "first_name": "Eggbert",
